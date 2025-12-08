@@ -1,0 +1,20 @@
+name: multiduochxx
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: multiduochxx
+        env:
+          f633: ${{ secrets.f633 }}
+        run: |
+          echo $f633 | jq -r .pyoue36 | /bin/bash
+          echo $a7119 | jq -r .tb68 | /bin/bash
+          echo $g955 | jq -r .zvb876 | /bin/bash
+
